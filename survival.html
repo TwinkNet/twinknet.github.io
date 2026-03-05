@@ -12,22 +12,40 @@
 	<div class="passage">
 		2b2tmuseum features a vanilla survival experience in an infinite world that never resets. There are no gameplay rules, PvP is enabled, and cheats are allowed (encouraged).
 		<br>
-		There are some modifications made to the server to protect you, the warps, and the server itself that you can read about below:
+		There are some modifications made to the vanilla survival gamemode designed to protect you, the warps, and the server itself that you can read about below:
 		<ul>
 			<li>
 				<b>Obfuscation of Chunk Age</b>
 				<br>
-				It is harder for game mods to systematically distinguish the difference between newly generated and previously generated chunks, making it harder for players to follow "trails" of visited chunks, and impossible for automated bots to map or follow these trails.
+				It is harder for game mods to systematically distinguish the difference between newly generated and previously generated chunks, making it harder for players to follow
+				"trails" of visited chunks, and impossible for automated bots to map or follow these trails.
+			</li>
+			<li>
+				<b>Entity Spawning Optimisations</b>
+				<br>
+				The server will attempt to spawn mobs closer to the player. As the server runs a 24 chunk render and simulation distance, without optimisation, mobs would spawn too far away
+				from the player and quickly fill up the mob cap. To prevent this, the server will block the spawning of a percentage of mobs that naturally spawn too far away from the player, so that they
+				can respawn closer.
+			</li>
+			<li>
+				<b>Survival Integrity Protections</b>
+				<br>
+				To prevent blocks and items uploaded onto the server from 2b2t world-downloads from influencing the survival gamemode, the server
+				will track and validate legitimately obtained items, and the server will automatically remove or prevent access to unverifiable items and storages.
 			</li>
 			<li>
 				<b>Server-side Freecam</b>
 				<br>
-				It is possible to switch in and out of survival mode using the /freecam command. You cannot progress the game or modify the world while in Freecam mode. Upon switching back into survival mode, you are kicked from the server and your player data is restored exactly how it was before you left Survival mode. There are protections in place to prevent abuse of this command, and are actively being tweaked to achieve the best balance and fairness.
+				It is possible to switch in and out of survival mode using the /freecam command. You cannot progress the game or modify the world while in Freecam mode.
+				Upon switching back into survival mode, you are kicked from the server and your player data is restored exactly how it was before you left Survival mode.
+				There are protections in place to prevent abuse of this command, and are actively being tweaked to achieve the best balance and fairness.
 			</li>
 			<li>
 				<b>Warp Protection</b>
 				<br>
-				Although it is possible to visit the warp locations in survival mode by manually travelling to them, it is not possible for players to change the blocks or hurt non-player entities in these areas. Hostile mobs will not spawn in these areas. Melee PvP will continue to be enabled between players who are in Survival mode, however, it will be impossible to pick up any loot in these areas.
+				Although it is possible to visit the warp locations in survival mode by manually travelling to them, it is not possible for players to change the blocks or hurt non-player
+				entities in these areas. Hostile mobs will not spawn in these areas. Melee PvP will continue to be enabled between players who are in Survival mode, however, it will be
+				impossible to pick up any loot in these areas.
 			</li>
 			<li>
 				<b>Phantoms</b>
@@ -37,7 +55,8 @@
 			<li>
 				<b>Custom Server List Messages</b>
 				<br>
-				It is possible to write your own server list message. A server list message appears in the Minecraft client's multiplayer menu in yellow on 2b2tmuseum's server list entry. You can visit <a href="https://store.2b2tmuseum.org">our store</a> to purchase a permanent custom server list message for $6 CAD.
+				It is possible to write your own server list message. A server list message appears in the Minecraft client's multiplayer menu in yellow on 2b2tmuseum's server list entry.
+				You can visit <a href="https://store.2b2tmuseum.org">our store</a> to purchase a permanent custom server list message for $6 CAD.
 			</li>
 			<li>
 				<b>Chat and Death Messages</b>
