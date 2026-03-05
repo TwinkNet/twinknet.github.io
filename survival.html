@@ -23,15 +23,15 @@
 			<li>
 				<b>Entity Spawning Optimisations</b>
 				<br>
-				The server will attempt to spawn mobs closer to the player. As the server runs a 24 chunk render and simulation distance, without optimisation, mobs would spawn too far away
+				The server will attempt to spawn mobs closer to the player. The server runs a generous 24 chunk render and simulation distance, and without optimisation, mobs would spawn too far away
 				from the player and quickly fill up the mob cap. To prevent this, the server will block the spawning of a percentage of mobs that naturally spawn too far away from the player, so that they
-				can respawn closer.
+				can respawn closer. These changes will not affect mobs that have already spawned, and will not affect mob farms as long as there is a player nearby to keep it activated.
 			</li>
 			<li>
 				<b>Survival Integrity Protections</b>
 				<br>
 				To prevent blocks and items uploaded onto the server from 2b2t world-downloads from influencing the survival gamemode, the server
-				will track and validate legitimately obtained items, and the server will automatically remove or prevent access to unverifiable items and storages.
+				will track and validate all items legitimately obtained on the server. The server will automatically remove or prevent access to unverifiable items and storages.
 			</li>
 			<li>
 				<b>Server-side Freecam</b>
@@ -44,7 +44,8 @@
 				<b>Warp Protection</b>
 				<br>
 				Although it is possible to visit the warp locations in survival mode by manually travelling to them, it is not possible for players to change the blocks or hurt non-player
-				entities in these areas. Hostile mobs will not spawn in these areas. Melee PvP will continue to be enabled between players who are in Survival mode, however, it will be
+				entities in these areas. Hostile mobs will not spawn in these areas, and existing hostile mobs that attempt to hurt you will be removed.
+				Melee PvP will continue to be enabled between players who are in Survival mode, however, it will be
 				impossible to pick up any loot in these areas.
 			</li>
 			<li>
