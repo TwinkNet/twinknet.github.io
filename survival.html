@@ -24,9 +24,11 @@
 			<li>
 				<b>Entity Spawning Optimisations</b>
 				<br>
-				The server will attempt to spawn mobs closer to the player. The server runs a generous 24 chunk render and simulation distance, and without optimisation, mobs would spawn too far away
-				from the player and quickly fill up the mob cap. To prevent this, the server will block the spawning of a percentage of mobs that naturally spawn too far away from the player, so that they
-				can respawn closer. These changes will not affect mobs that have already spawned, and will not affect mob farms as long as there is a player nearby to keep it activated.
+				The server runs a generous 24 chunk render and simulation distance, and without optimisation, mobs would spawn too far away
+				from the player and quickly fill up the mob cap with mobs that will never be seen. To prevent this, the server will block the spawning of a percentage of mobs
+				that naturally spawn too far away from the player,
+				so that these mobs can respawn closer to the player. These changes will not affect mobs that have already spawned,
+				and will not affect mob farms as long as there is a player nearby to keep it activated.
 			</li>
 			<li>
 				<b>Survival Integrity Protections</b>
