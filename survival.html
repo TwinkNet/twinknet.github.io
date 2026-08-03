@@ -1,81 +1,105 @@
 <html lang="en">
 <head>
-	<link rel="stylesheet" href="stylesheet.css"/>
-	<title>2b2tmuseum.org</title>
+    <link rel="stylesheet" href="stylesheet.css"/>
+    <title>2b2tmuseum.org</title>
 </head>
 <body>
-	<div class="header">2b2tmuseum.org</div>
-	<div class="summary">The original survival 2b2t world-download exhibit server</div>
-	<div class="versioninfo">Minecraft 1.21.x</div>
-	<div class="versioninfo"><a href="index.html"> Home</a> <!--| <a href="https://store.2b2tmuseum.org">Store</a>--> | <a href="museum.html">Museum</a> | <a href="survival.html">Survival</a> (you are here) | <a href="terms.html">Rules</a> | <a href="wdls.html">World Downloads</a></div>
-	<div class="screenshot"><img src="media/survival_resized.png" alt="Two players standing next to each other holding diamond pickaxes and wearing diamond armour."></div>
-	<div class="passage">
-		2b2tmuseum features a vanilla survival experience in an infinite world that never resets. There are no gameplay rules, PvP is enabled, and cheats are allowed (encouraged).
-		The server promotes an environment where players are allowed to explore, build, steal, betray, fight, and grief in 2b2tmuseum's massive world with no repercussions from a server operator.
-		<br>
-		There are some modifications made to the vanilla survival gamemode designed to protect you, the archived locations, and the server itself that you can read about below:
-		<ul>
-			<li>
-				<b>Obfuscation of Chunk Age</b>
-				<br>
-				It is harder for game mods to systematically distinguish the difference between newly generated and previously generated chunks, making it harder for players to follow
-				"trails" of visited chunks, and impossible for automated bots to map or follow these trails.
-			</li>
-			<li>
-				<b>Entity Spawning Optimisations</b>
-				<br>
-				The server runs a generous 24 chunk render and simulation distance, and without optimisation, mobs would spawn too far away
-				from the player and quickly fill up the mob cap with mobs that will never be seen. To prevent this, the server will block the spawning of a percentage of mobs
-				that naturally spawn too far away from the player,
-				so that these mobs can respawn closer to the player. These changes will not affect mobs that have already spawned,
-				and will not affect mob farms as long as there is a player nearby to keep it activated.
-			</li>
-			<li>
-				<b>Survival Integrity Protections</b>
-				<br>
-				To prevent blocks and items uploaded onto the server from 2b2t world-downloads from influencing the survival gamemode, the server
-				will track and validate all items legitimately obtained on the server. The server will automatically remove or prevent access to unverifiable items and storages.
-			</li>
-			<li>
-				<b>Server-side Freecam</b>
-				<br>
-				It is possible to temporarily switch out of survival mode using the /freecam command. You cannot progress the game or modify the world while in Freecam mode.
-				Upon switching back into survival mode, you are kicked from the server and your player data is restored exactly how it was before you left Survival mode.
-				There are many protections in place to prevent players from using this feature to escape certain deaths, find player bases, keep chunks loaded indefinitely,
-				or otherwise gain a significant unfair advantage.
-			</li>
-			<li>
-				<b>Warp Protection</b>
-				<br>
-				Although it is possible to visit the warp locations in survival mode by manually travelling to them, the server will passively prevent players from changing
-				the blocks or hurting non-player entities in these areas. Hostile mobs will not spawn in these areas,
-				and existing hostile mobs that attempt to hurt you will be automatically removed.
-				Melee PvP will continue to be enabled between players who are in Survival mode, however, it will be
-				impossible to pick up any loot in these areas.
-			</li>
-			<li>
-				<b>Phantoms</b>
-				<br>
-				Phantoms are currently disabled, however they may be re-enabled in the future and tweaked to allow spawning in a non-aggressive manner.
-			</li>
-			<li>
-				<b>Custom Server List Messages</b>
-				<br>
-				It is possible to write your own server list message. A server list message appears in the Minecraft client's multiplayer menu in yellow on 2b2tmuseum's server list entry.
-				You can visit <a href="https://store.2b2tmuseum.org">our store</a> to purchase a permanent custom server list message for $6 CAD.
-			</li>
-			<li>
-				<b>Chat and Death Messages</b>
-				<br>
-				<ul>
-					<li>Chat is re-worked to allow greentext by placing ">" as the very first character of your message.</li>
-					<li>Whispering has been re-worked to allow easier access to reply commands.</li>
-					<li>The server allows you to /ignore certain players who you don't want to see messages from.</li>
-					<li>The server allows you to /togglechat to hide chat messages all together.</li>
-				</ul>
-			</li>
-		</ul>
-	</div>
+<div class="header">
+    <span style="color: #00AAAA">2builders</span><span style="color:#AA0000">2tools</span> <span style="color:#555555">Museum</span>
+</div>
+<div class="header-ip">2b2tmuseum.org</div>
+<div class="summary">The original survival 2b2t world-download exhibit server</div>
+<div class="versioninfo">Minecraft 1.21.x</div>
+<div class="versioninfo"><a href="index.html"> Home</a> <!--| <a href="https://store.2b2tmuseum.org">Store</a>--> | <a
+        href="museum.html">Museum</a> | <a href="survival.html">Survival</a> (you are here) | <a
+        href="terms.html">Rules</a> | <a href="wdls.html">World Downloads</a></div>
+<div class="screenshot"><img src="media/survival_resized.png"
+                             alt="Two players standing next to each other holding diamond pickaxes and wearing diamond armour.">
+</div>
+<div class="passage">
+    2b2tmuseum features a vanilla survival experience in an infinite world that never resets. There are no gameplay
+    rules, PvP is enabled, and cheats are allowed (encouraged).
+    The server promotes an environment where players are allowed to explore, build, steal, betray, fight, and grief in
+    2b2tmuseum's massive world with no repercussions from a server operator.
+    <br>
+    There are some modifications made to the vanilla survival gamemode designed to protect you, the archived locations,
+    and the server itself that you can read about below:
+    <ul>
+        <li>
+            <b>Obfuscation of Chunk Age</b>
+            <br>
+            It is harder for game mods to systematically distinguish the difference between newly generated and
+            previously generated chunks, making it harder for players to follow
+            "trails" of visited chunks, and impossible for automated bots to map or follow these trails.
+        </li>
+        <li>
+            <b>Entity Spawning Optimisations</b>
+            <br>
+            The server runs a generous 24 chunk render and simulation distance, and without optimisation, mobs would
+            spawn too far away
+            from the player and quickly fill up the mob cap with mobs that will never be seen. To prevent this, the
+            server will block the spawning of a percentage of mobs
+            that naturally spawn too far away from the player,
+            so that these mobs can respawn closer to the player. These changes will not affect mobs that have already
+            spawned,
+            and will not affect mob farms as long as there is a player nearby to keep it activated.
+        </li>
+        <li>
+            <b>Survival Integrity Protections</b>
+            <br>
+            To prevent blocks and items uploaded onto the server from 2b2t world-downloads from influencing the survival
+            gamemode, the server
+            will track and validate all items legitimately obtained on the server. The server will automatically remove
+            or prevent access to unverifiable items and storages.
+        </li>
+        <li>
+            <b>Server-side Freecam</b>
+            <br>
+            It is possible to temporarily switch out of survival mode using the /freecam command. You cannot progress
+            the game or modify the world while in Freecam mode.
+            Upon switching back into survival mode, you are kicked from the server and your player data is restored
+            exactly how it was before you left Survival mode.
+            There are many protections in place to prevent players from using this feature to escape certain deaths,
+            find player bases, keep chunks loaded indefinitely,
+            or otherwise gain a significant unfair advantage.
+        </li>
+        <li>
+            <b>Warp Protection</b>
+            <br>
+            Although it is possible to visit the warp locations in survival mode by manually travelling to them, the
+            server will passively prevent players from changing
+            the blocks or hurting non-player entities in these areas. Hostile mobs will not spawn in these areas,
+            and existing hostile mobs that attempt to hurt you will be automatically removed.
+            Melee PvP will continue to be enabled between players who are in Survival mode, however, it will be
+            impossible to pick up any loot in these areas.
+        </li>
+        <li>
+            <b>Phantoms</b>
+            <br>
+            Phantoms are currently disabled, however they may be re-enabled in the future and tweaked to allow spawning
+            in a non-aggressive manner.
+        </li>
+        <li>
+            <b>Custom Server List Messages</b>
+            <br>
+            It is possible to write your own server list message. A server list message appears in the Minecraft
+            client's multiplayer menu in yellow on 2b2tmuseum's server list entry.
+            You can visit <a href="https://store.2b2tmuseum.org">our store</a> to purchase a permanent custom server
+            list message for $6 CAD.
+        </li>
+        <li>
+            <b>Chat and Death Messages</b>
+            <br>
+            <ul>
+                <li>Chat is re-worked to allow greentext by placing ">" as the very first character of your message.
+                </li>
+                <li>Whispering has been re-worked to allow easier access to reply commands.</li>
+                <li>The server allows you to /ignore certain players who you don't want to see messages from.</li>
+                <li>The server allows you to /togglechat to hide chat messages all together.</li>
+            </ul>
+        </li>
+    </ul>
+</div>
 <!--	<div class="passagec">-->
 <!--		The IP to connect is <b>2b2tmuseum.org</b> (port 25565)-->
 <!--		<br>-->
@@ -84,13 +108,13 @@
 <!--		<br>-->
 <!--		<b>This website will be updated with more content in the near future.</b>-->
 <!--	</div>-->
-	<div class="footer">
-		discord: <a href="https://discord.2b2tmuseum.org">https://discord.2b2tmuseum.org</a>
-		<br>
-		e-mail: contact@calamitycraft.online
-		<br>
-		any server notices will be posted on this webpage
-	</div>
+<div class="footer">
+    discord: <a href="https://discord.2b2tmuseum.org">https://discord.2b2tmuseum.org</a>
+    <br>
+    e-mail: contact@calamitycraft.online
+    <br>
+    any server notices will be posted on this webpage
+</div>
 </body>
 
 </html>
