@@ -5,57 +5,98 @@
 }
 
 body {
-	font-family: Verdana, sans-serif;
+	background-color: #000000;
+	color: #00CC00;
+	font-family: "Courier New", Courier, monospace;
+	padding: 15px;
+}
+
+a:link {
+	color: #88CCFF;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #88CCFF;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #FFFF00;
+	background-color: #000000;
 }
 
 .header {
-	padding-top: 20px;
+	font-family: MinecraftMenuScript, sans-serif;
+	font-size: 28pt;
+	font-weight: bold;
 	text-align: center;
-	font-size: 30px;
-	font-family: MinecraftMenuScript, Verdana, sans-serif;
+	border: 4px groove #00AAAA;
+	background-color: #050505;
+	padding: 10px;
+	margin-bottom: 10px;
 }
+
 .header-ip {
-	padding-top: 20px;
 	text-align: center;
-	font-size: 20px;
+	font-size: 16pt;
+	color: #FFFF00;
+	background-color: #111111;
+	border: 2px inset #555555;
+	padding: 5px;
+	margin-bottom: 10px;
 }
 
 .summary {
 	text-align: center;
-	font-size: 16px;
+	color: #888888;
 	font-style: italic;
+	margin-bottom: 5px;
 }
 
 .versioninfo {
 	text-align: center;
-	font-size: 14px;
+	background-color: #0a0a0a;
+	border: 1px solid #333333;
+	padding: 4px;
+	margin-bottom: 8px;
+	font-size: 10pt;
 }
 
 .screenshot {
 	text-align: center;
-	padding: 40px;
+	margin: 15px 0;
+	border: 3px ridge #555555;
+	background-color: #0a0a0a;
+	padding: 8px;
 }
 
-img {
-	border-radius: 0.5%;
+.screenshot img {
+	border: 1px solid #00AAAA;
+	max-width: 100%;
 }
 
 .passage {
-	margin-left: 220px;
-	margin-right: 220px;
+	border: 3px ridge #555555;
+	background-color: #0a0a0a;
+	padding: 15px;
+	margin-bottom: 15px;
+	line-height: 1.5;
 }
 
 .passagec {
-	padding-top: 27px;
-	margin-left: 220px;
-	margin-right: 220px;
+	border: 2px inset #AA0000;
+	background-color: #0f0505;
 	text-align: center;
+	padding: 10px;
+	margin-bottom: 15px;
+	color: #FFFFFF;
 }
 
 .footer {
 	text-align: center;
-	color: gray;
-	bottom: 5px;
-	padding-top: 40px;
+	border-top: 1px dashed #444444;
+	padding-top: 10px;
+	font-size: 9pt;
+	color: #888888;
 }
-
