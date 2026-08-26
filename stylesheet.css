@@ -5,6 +5,10 @@
 }
 
 body {
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+
 	background-color: #000000;
 	color: #00CC00;
 	font-family: "Courier New", Courier, monospace;
