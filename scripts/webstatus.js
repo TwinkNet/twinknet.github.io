@@ -4,7 +4,8 @@ async function updateServerStatus() {
         const response = await fetch('https://satellite.2b2tmuseum.org/stats');
         if (!response.ok) throw new Error('Failed to fetch');
         const data = await response.json();
-        statusBox.innerHTML = `[ Players online: ${data.currentPlayers} |  Players who've joined at least once: ${data.uniquePlayers} | World size: ${data.worldSize} ${data.worldSizeUnits} ]`
+        const wSizeGB = (data.worldSizeBytes / 1000000000).toFixed(2)
+        statusBox.innerHTML = `[ Players online: ${data.currentPlayers} |  Players who've joined at least once: ${data.uniquePlayers} | World size: ${wSizeGB} GB ]`
 
     } catch (error) {
         console.error('Error fetching server status:', error);
